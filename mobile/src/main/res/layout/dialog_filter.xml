@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    <TextView
+            android:text="Filter sources by: "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_margin="@dimen/default_margin_x2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/divider"
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/default_margin_x2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+            android:text="Language"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/languagesTitle"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/languagesSpinner"
+            android:layout_marginTop="@dimen/default_margin_x2"
+            android:layout_marginStart="@dimen/default_margin_x2"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            android:layout_marginLeft="@dimen/default_margin_x2" />
+
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/languagesSpinner"
+            android:layout_margin="@dimen/default_margin_x2"
+            android:prompt="@string/languages"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintLeft_toRightOf="@+id/languagesTitle"
+            android:layout_marginTop="16dp" />
+
+    <TextView
+            android:text="Category"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/categoriesTitle"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/default_margin_x2"
+            android:layout_marginStart="@dimen/default_margin_x2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languagesTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/categoriesSpinner"
+            android:layout_marginLeft="@dimen/default_margin_x2" />
+
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoriesSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/languagesSpinner"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="@dimen/default_margin_x2"
+            android:layout_marginTop="@dimen/default_margin_x2"
+            android:layout_marginEnd="@dimen/default_margin_x2"
+            app:layout_constraintLeft_toLeftOf="@+id/languagesSpinner" />
+
+    <TextView
+            android:text="Country"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/countriesTitle"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoriesTitle"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/default_margin_x2"
+            android:layout_marginStart="@dimen/default_margin_x2"
+            app:layout_constraintBottom_toBottomOf="@+id/countriesSpinner"
+            android:layout_marginLeft="@dimen/default_margin_x2" />
+
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/countriesSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/categoriesSpinner"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="@dimen/default_margin_x2"
+            android:layout_marginTop="@dimen/default_margin_x2"
+            android:layout_marginEnd="@dimen/default_margin_x2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/categoriesSpinner" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/action_sync"
+            android:title="@string/action_sync"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:orderInCategory="100"
+            app:showAsAction="always" />
+
+    <item
+            android:id="@+id/nav_sort_top"
+            android:title="@string/nav_sort_top_text" />
+    <item
+            android:id="@+id/nav_sort_latest"
+            android:title="@string/nav_sort_latest_text" />
+    <item
+            android:id="@+id/nav_sort_popular"
+            android:title="@string/nav_sort_popular_text" />
+</menu>

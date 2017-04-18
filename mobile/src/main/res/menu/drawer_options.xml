@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Languages">
+        <menu>
+            <group android:checkableBehavior="single"  >
+                <item android:title="en" />
+                <item android:title="de" />
+                <item android:title="fr" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Categories">
+        <menu>
+            <group android:checkableBehavior="all"  >
+                <item android:title="business" />
+                <item android:title="entertainment" />
+                <item android:title="gaming" />
+                <item android:title="general" />
+                <item android:title="music" />
+                <item android:title="politics" />
+                <item android:title="science-and-nature" />
+                <item android:title="sport" />
+                <item android:title="technology" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Countries">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item android:title="us" />
+                <item android:title="de" />
+                <item android:title="fr" />
+            </group>
+        </menu>
+    </item>
+</menu>
